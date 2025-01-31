@@ -1,0 +1,952 @@
+body{
+  height: 300vh;
+  background-color: white; 
+}
+
+main{
+  position : fixed;
+  height: 100vh;
+  width: 1920px;
+}
+
+/* ne pas toucher aux éléments ci-dessus. On travail c'est ce qui permet d'avoir une page que l'on peut 
+"scroller" mais qui visuellement ne bouge pas. */
+
+.globuleTAB{
+  z-index: 12;
+}
+
+
+
+@media (max-width: 500px) {
+  /*apparence différente pour une page inférieure à 500px*/
+
+  .fondj{
+    position: absolute;
+    width: 500px;
+    height: 2649px;
+    left: 0px;
+    top: 0px;
+  }
+
+
+  .filsnoir{
+    position: absolute;
+    width: 318px;
+    height: 1678px;
+    left: 117px;
+    top: 231px;
+  }
+
+
+  .fondvert{
+    position: absolute;
+    width: 500px;
+    height: 2648px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .trucCLIC{
+    position: absolute;
+    width: 500px;
+    height: 2648px;
+    left: 0px;
+    top: 0px;
+  }
+
+
+  
+ #G1N{
+  position: absolute;
+  width: 470px;
+  height: 2523px;
+  left: -31px;
+  top: -41px;
+ }
+
+ #G2N{
+  position: absolute;
+  width: 310px;
+  height: 2523px;
+  left: 467px;
+  top: -50px;
+  transform: rotate(331.24deg);
+ }
+
+ #G3N{
+  position: absolute;
+  width: 136px;
+  height: 1840px;
+  left: -504px;
+  top: -760px;
+  transform: rotate(467.24deg);
+ }
+
+ #G4N{
+  position: absolute;
+  width: 223px;
+  height: 2272px;
+  left: -880px;
+  top: -648px;
+  transform: rotate(476.24deg);
+ }
+
+ #G5N{
+  position: absolute;
+  width: 315px;
+  height: 2523px;
+  left: 1049px;
+  top: 309px;
+  transform: rotate(307.24deg);
+ }
+
+ #G6N{
+  position: absolute;
+  width: 163px;
+  height: 2272px;
+  left: -664px;
+  top: -571px;
+  transform: rotate(449.24deg);
+ }
+
+ #G7N{
+  position: absolute;
+  width: 75px;
+  height: 2523px;
+  left: -462px;
+  top: 465px;
+  transform: rotate(385.24deg);
+ }
+
+ #G8N{
+  position: absolute;
+  width: 172px;
+  height: 2523px;
+  left: -1122px;
+  top: -116px;
+  transform: rotate(441.24deg);
+ }
+
+ #G9N{
+  position: absolute;
+  width: 184px;
+  height: 2272px;
+  left: -752px;
+  top: -1540px;
+  transform: rotate(488.24deg);
+ }
+
+ #G10N{
+  position: absolute;
+  width: 134px;
+  height: 2523px;
+  left: 466px;
+  top: 710px;
+  transform: rotate(353.24deg);
+ }
+
+ #T1B{
+  position: relative;
+  left: 46px;
+  top: 358px;
+  width: 503px;
+  height: 370px;
+  transform: rotate(355.24deg);
+ }
+
+ #T2B{
+  position: relative;
+  left: -352px;
+  top: -100px;
+  width: 1259px;
+  height: 370px;
+  transform: rotate(244.24deg);
+ }
+
+ #T3B{
+  position: relative;
+  left: -18px;
+  top: -538px;
+  width: 660px;
+  height: 373px;
+  transform: rotate(-122.76deg);
+ }
+
+ #T4B{
+  position: relative;
+  left: 35px;
+  top: -810px;
+  width: 323px;
+  height: 441px;
+  transform: rotate(745.24deg);
+ }
+
+ #T5B{
+  position: relative;
+  left: -456px;
+  top: -1398px;
+  width: 1227px;
+  height: 370px;
+  transform: rotate(444.24deg);
+ }
+
+ #T6B{
+  position: relative;
+  left: -50px;
+  top: -1574px;
+  width: 887px;
+  height: 373px;
+  transform: rotate(-104.76deg);
+ }
+
+ #T7B{
+  position: relative;
+  left: -172px;
+  top: -1887px;
+  width: 712px;
+  height: 441px;
+  transform: rotate(679.24deg);
+ }
+
+ #T8B{
+  position: relative;
+  left: -18px;
+  top: -2452px;
+  width: 776px;
+  height: 463px;
+  transform: rotate(573.24deg);
+ }
+
+ #T9B{
+  position: relative;
+  left: 252px;
+  top: -2984px;
+  width: 350px;
+  height: 373px;
+  transform: rotate(602.24deg);
+ }
+
+ #T13B{
+  position: relative;
+  left: -7px;
+  top: -3208px;
+  width: 547px;
+  height: 373px;
+  transform: rotate(485.24deg);
+ }
+
+ #T14B{
+  position: relative;
+  left: -598px;
+  top: -3712px;
+  width: 1773px;
+  height: 401px;
+  transform: rotate(439.24deg);
+
+ }
+ 
+ 
+}
+
+ 
+@media (max-width: 1800px) and (min-width :500px){
+  /*apparence différente pour une page comprise entre 800px et 1000px*/
+  
+  .telephone{
+    visibility: hidden;
+  }
+
+  body{
+    height: 300vh;
+    background-color: white; 
+  }
+
+  /* S'assurer que les globules tournent autour de leur centre */
+.globuleTAB {
+  transform-origin: center center; /* Point de référence au centre */
+  transition: transform 0.1s ease; /* Facultatif, pour une transition plus douce */
+}
+
+
+  .fondnoirtrous{
+    position: absolute;
+    width: 1800px;
+    height: 1678px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .filsvert1{
+    position: absolute;
+    width:781px;
+    height: 1678px;
+    left: -18px;
+    top: 27px;
+
+  }
+  .filsvert2{
+    position: absolute;
+    width:967px;
+    height: 2318px;
+    left: -300px;
+    top: -410px;
+    transform: rotate(462.24deg);
+  }
+  .filsvert3{
+    position: absolute;
+    width: 532px;
+    height: 1756px;
+    left: 1039px;
+    top:-1278px;
+    transform: rotate(520.24deg);
+  }
+
+  #GVB1{
+    position: absolute;
+    width: 817px;
+    height: 2523px;
+    left: -404px;
+    top: -369px;
+    transform: rotate(397.24deg);
+   }
+ 
+   #GVB2{
+    position: absolute;
+    width: 817px;
+    height: 2523px;
+    left: -1308px;
+    top: -369px;
+    transform: rotate(441.24deg);
+   }
+
+    
+   #GVB3{
+    position: absolute;
+    width: 499px;
+    height: 2523px;
+    left: 180px;
+    top: 734px;
+    transform: rotate(341.24deg);
+   }
+
+   #GVB4{
+    position: absolute;
+    width: 1069px;
+    height: 2523px;
+    left: 2086px;
+    top: -164px;
+    transform: rotate(280.24deg);
+   }
+
+   #GVB5{
+    position: absolute;
+    width: 372px;
+    height: 2523px;
+    left: 453px;
+    top: -33px;
+    transform: rotate(385.24deg);
+   }
+    
+   #GVB6{
+    position: absolute;
+    width: 976px;
+    height: 2523px;
+    left: 364px;
+    top: 264px;
+    transform: rotate(392.24deg);
+   }
+
+   #GVB7{
+    position: absolute;
+    width: 1543px;
+    height: 2523px;
+    left: 78px;
+    top: -1889px;
+    transform: rotate(532.24deg);
+   }
+   
+   #GVB8{
+    position: absolute;
+    width: 531px;
+    height: 2523px;
+    left: 1453px;
+    top: -32px;
+    transform: rotate(308.24deg);
+   }
+    
+   #GVB9{
+    position: absolute;
+    width: 631px;
+    height: 2523px;
+    left: 356px;
+    top: -1009px;
+    transform: rotate(500.24deg);
+   }
+
+   #GVB10{
+    position: absolute;
+    width: 750px;
+    height: 2523px;
+    left: 899px;
+    top: 944px;
+    transform: rotate(368.24deg);
+   }
+
+  
+  #TJ1{
+    position: absolute;
+    width:1922px;
+    height: 1678px;
+    left: -23px;
+    top: -500px;
+    transform: rotate(574.24deg)
+   }
+  #TJ1gauche{
+    position: absolute;
+    width:1368px;
+    height: 1678px;
+    left: -140px;
+    top: -569px;
+    transform: rotate(539.24deg)
+   }
+   #TJ1petitg{
+    position: absolute;
+    width:1379px;
+    height: 1678px;
+    left: 140px;
+    top: -162px;
+    transform: rotate(682.24deg)
+   }
+   #TJ1petitd{
+    position: absolute;
+    width:1039px;
+    height: 1678px;
+    left: 1148px;
+    top: -1161px;
+    transform: rotate(566.24deg)
+   }
+
+   #TJ2{
+    position: absolute;
+    width:2247px;
+    height: 1678px;
+    left: -48px;
+    top: -634px;
+    transform: rotate(563.24deg)
+   }
+   #TJ2petitd{
+    position: absolute;
+    width:1175px;
+    height: 1678px;
+    left: 647px;
+    top: 190px;
+    transform: rotate(376.24deg)
+   }
+
+   #TJ3{
+    position: absolute;
+    width:1562px;
+    height: 1678px;
+    left: 116px;
+    top: -741px;
+    transform: rotate(552.24deg)
+   }
+   #TJ3petitg{
+    position: absolute;
+    width:848px;
+    height: 1678px;
+    left: -950px;
+    top: -548px;
+    transform: rotate(428.24deg)
+   }
+
+   #TJ4{
+    position: absolute;
+    width:1694px;
+    height: 1678px;
+    left: 6px;
+    top: 148px;
+    transform: rotate(372.24deg)
+   }
+   #TJ4petitd{
+    position: absolute;
+    width:695px;
+    height: 1678px;
+    left: 1228px;
+    top: -1086px;
+    transform: rotate(189.24deg)
+   }
+
+   #TJ5{
+    position: absolute;
+    width:1456px;
+    height: 1678px;
+    left: 366px;
+    top: -520px;
+    transform: rotate(500.24deg)
+   }
+   #TJ5petitg{
+    position: absolute;
+    width:1021px;
+    height: 1678px;
+    left: 361px;
+    top: -417px;
+    transform: rotate(609.24deg)
+   }
+   
+   #TJ6{
+    position: absolute;
+    width:1085px;
+    height: 1678px;
+    left: 249px;
+    top: 254px;
+    transform: rotate(398.24deg)
+   }
+   #TJ6gauche{
+    position: absolute;
+    width:1454px;
+    height: 1678px;
+    left: 220px;
+    top: 195px;
+    transform: rotate(258.24deg)
+   }
+   #TJ6petitg{
+    position: absolute;
+    width:1256px;
+    height: 1678px;
+    left: -615px;
+    top: -615px;
+    transform: rotate(444.24deg)
+  }
+  #TJ6petitd{
+    position: absolute;
+    width:824px;
+    height: 1678px;
+    left: 632px;
+    top: -196px;
+    transform: rotate(405.24deg)
+   }
+
+   #TJ7{
+    position: absolute;
+    width:1085px;
+    height: 1678px;
+    left: 1084px;
+    top: -739px;
+    transform: rotate(208.24deg)
+   }
+   #TJ7gauche{
+    position: absolute;
+    width:1422px;
+    height: 1678px;
+    left: -891px;
+    top: 397px;
+    transform: rotate(66.24deg)
+   }
+   #TJ7gauche2{
+    position: absolute;
+    width:1173px;
+    height: 1678px;
+    left: -669px;
+    top: 695px;
+    transform: rotate(48.24deg)
+   }
+
+   #TJ8{
+    position: absolute;
+    width:1085px;
+    height: 1678px;
+    left: 577px;
+    top: -271px;
+    transform: rotate(167.24deg)
+   }
+   #TJ8petitg{
+    position: absolute;
+    width:869px;
+    height: 1678px;
+    left: 345px;
+    top: -468px;
+    transform: rotate(255.24deg)
+   }
+
+
+   
+
+
+
+}  
+
+
+@media (min-width :1800px){
+  /*apparence différente pour une page supérieure à 1800px*/
+
+  .telephone{
+    visibility: hidden;
+  }
+
+  body{
+    height: 300vh;
+    background-color: white; 
+  }
+  
+ .fondn{
+  position: absolute;
+  width: 4221px;
+  height: 3075px;
+  left: -1273px;
+  top: -92px;
+ }
+
+ .filsjfond{
+  position: absolute;
+  width: 1920px;
+  height:1359px;
+  left: 216px;
+  top: 177px;
+ }
+
+.globuleORD{
+  mix-blend-mode:exclusion;
+  z-index: 4;
+}
+ #G1_G{
+  position: absolute;
+  left: 136.07px;
+  top: -87.18px;
+  width: 2107px;
+  height: 1713.07px;
+  transform: rotate(279.24deg);
+ }
+
+ #G1_B{
+  position: absolute;
+  left: -342.02px;
+  top: -549.89px;
+  width: 2791px;
+  height: 2176px;
+  transform: rotate(120.87deg);
+ }
+
+ #G1_D{
+  position: absolute;
+  left: 780.83px;
+  top: -618.75px;
+  width: 2107px;
+  height: 1713.07px;
+  transform: rotate(126.02deg);
+ }
+
+ #G2{
+  position: absolute;
+  left: -134px;
+  top: 371px;
+  width: 973px;
+  height: 733px;
+ }
+
+ #G3{
+  position: absolute;
+  left: 970px;
+  top: 865px;
+  width: 984px;
+  height: 741px;
+ }
+
+ #G4{
+  position: absolute;
+  left: 1300px;
+  top: 154px;
+  width: 1013px;
+  height: 773px;
+ }
+
+ #G4_H{
+  position: absolute;
+  left: -171px;
+  top: -81px;
+  width: 826px;
+  height: 585px;
+ }
+
+
+ #T1{
+  position: absolute;
+  left: 1358px;
+  top: 627px;
+  width: 449px;
+  height: 372px;
+ }
+
+ #T2{
+  position: absolute;
+  left: 1140.31px;
+  top: 776.18px;
+  width: 500px;
+  height: 415px;
+  transform: rotate(45.35deg);
+ }
+
+ #T3_G{
+  position: absolute;
+  left: 374.68px;
+  top: 149.75px;
+  width: 916px;
+  height: 734px;
+  transform: rotate(150.29deg);
+ }
+
+ #T3_D{
+  position: absolute;
+  left: 1224.4px;
+  top: 213.6px;
+  width: 1208px;
+  height: 956px;
+  transform: rotate(313.26deg);
+ }
+
+ #T3_B{
+  position: absolute;
+  left: 540.5px;
+  top: 726.8px;
+  width: 773px;
+  height: 615px;
+  transform: rotate(63.03deg);
+ }
+
+ #T4{
+  position: absolute;
+  left: 1345.4px;
+  top: 228.9px;
+  width: 724px;
+  height: 630px;
+  transform: rotate(324.08deg);
+ }
+
+ #T4_B{
+  position: absolute;
+  left: 760.5px;
+  top: 879.3px;
+  width: 724px;
+  height: 283px;
+  transform: rotate(89.92deg);
+ }
+
+ #T5{
+  position: absolute;
+  left: 429.7px;
+  top: -38.62px;
+  width: 892px;
+  height: 721px;
+  transform: rotate(126.68deg);
+ }
+
+ #T5_H{
+  position: absolute;
+  left: -618.42px;
+  top: -334.9px;
+  width: 2011px;
+  height: 1676px;
+  transform: rotate(101.76deg);
+ }
+
+
+ #T6{
+  position: absolute;
+  left: 167.23px;
+  top: -35.21px;
+  width: 1136px;
+  height: 884px;
+  transform: rotate(105.57deg);
+ }
+
+ #T6_D{
+  position: absolute;
+  left: 1467.7px;
+  top:-7.9px;
+  width: 1430px;
+  height: 1513px;
+  transform: rotate(270.76deg);
+ }
+
+ #T7{
+  position: absolute;
+  left: 402.16px;
+  top: 542.49px;
+  width: 769px;
+  height: 586px;
+  transform: rotate(47.58deg);
+ }
+
+ #TB01{
+  position: absolute;
+  left: -706.3px;
+  top:946.1px;
+  width: 1972px;
+  height: 1513px;
+  transform: rotate(311.76deg);
+ }
+ #TB02{
+  position: absolute;
+  left: -988.3px;
+  top:792.1px;
+  width: 2528px;
+  height: 1513px;
+  transform: rotate(284.76deg);
+ }
+ #TB03{
+  position: absolute;
+  left: -780.3px;
+  top:298.1px;
+  width: 2528px;
+  height: 1513px;
+  transform: rotate(188.76deg);
+ }
+ #TB04{
+  position: absolute;
+  left: -1314.3px;
+  top:934.1px;
+  width: 2528px;
+  height: 1513px;
+  transform: rotate(341.76deg);
+ }
+ #TB05{
+  position: absolute;
+  left: -543.3px;
+  top:890.1px;
+  width: 1326px;
+  height: 1513px;
+  transform: rotate(341.76deg);
+ }
+
+
+
+ #TB06{
+  position: absolute;
+  left: -1164.3px;
+  top: -511.9px;
+  width: 1626px;
+  height: 1513px;
+  transform: rotate(404.76deg);
+ }
+ #TB07{
+  position: absolute;
+  left: -1372.3px;
+  top: -355.9px;
+  width: 2230px;
+  height: 1513px;
+  transform: rotate(372.76deg);
+}
+#TB08{
+  position: absolute;
+  left: -1359.3px;
+  top: -986.9px;
+  width: 2528px;
+  height: 1513px;
+  transform: rotate(132.76deg);
+ }
+ #TB09{
+  position: absolute;
+  left: -211.3px;
+  top: -344.9px;
+  width: 1585px;
+  height: 1513px;
+  transform: rotate(262.76deg);
+ }
+ #TB010{
+  position: absolute;
+  left: -860.3px;
+  top: -608.9px;
+  width: 789px;
+  height: 1513px;
+  transform: rotate(433.76deg);
+ }
+
+
+ #TB011{
+  position: absolute;
+  left: 1644.7px;
+  top: -964.9px;
+  width: 1272px;
+  height: 1513px;
+  transform: rotate(491.76deg);
+ }
+ #TB012{
+  position: absolute;
+  left: 1174.7px;
+  top: -849.9px;
+  width: 1687px;
+  height: 1513px;
+  transform: rotate(443.76deg);
+ }
+ #TB013{
+  position: absolute;
+  left: 1376.7px;
+  top: -207.9px;
+  width: 1844px;
+  height: 1513px;
+  transform: rotate(-8.24deg);
+ }
+ #TB014{
+  position: absolute;
+  left: 1683.7px;
+  top: -241.9px;
+  width: 2157px;
+  height: 1513px;
+  transform: rotate(312.76deg)
+ }
+ #TB015{
+  position: absolute;
+  left: 1754.7px;
+  top: -1167.9px;
+  width: 1183px;
+  height: 1513px;
+  transform: rotate(506.76deg);
+ }
+
+
+  
+ #TB016{
+  position: absolute;
+  left: 1830.7px;
+  top: 427.1px;
+  width: 2135px;
+  height: 1513px;
+  transform: rotate(215.76deg);
+ }
+ #TB017{
+  position: absolute;
+  left: 1361.7px;
+  top: 503.1px;
+  width: 2528px;
+  height: 1513px;
+  transform: rotate(218.76deg);
+ }
+ #TB018{
+  position: absolute;
+  left: 1599.7px;
+  top: 760.1px;
+  width: 2528px;
+  height: 1513px;
+  transform: rotate(254.76deg);
+ }
+ #TB019{
+  position: absolute;
+  left: 487.7px;
+  top: 821.1px;
+  width: 2528px;
+  height: 1513px;
+  transform: rotate(398.76deg);
+ }
+ #TB020{
+  position: absolute;
+  left: 1354.7px;
+  top: 471.1px;
+  width: 1326px;
+  height: 1513px;
+  transform: rotate(460.76deg);
+ }
+
+
+
+}

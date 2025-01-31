@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="fond_jaune" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1083 2417.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffb300;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points=".5 .5 1080.5 .5 1079.5 2409.5 .5 2409.5 .5 .5"/>
+</svg>
